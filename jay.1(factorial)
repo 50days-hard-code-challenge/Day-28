@@ -1,0 +1,11 @@
+int factorial(int n) {
+    
+     
+    if(n==0)
+        return 1;
+
+    int smaller= factorial(n-1);   
+    int bigger = n * smaller;
+
+    return bigger;
+}
